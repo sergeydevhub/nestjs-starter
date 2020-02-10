@@ -5,7 +5,7 @@ Database   | Postgres                                        |
 ORM        | TypeORM                                         |                               
 Documentation| Swagger                                       |
 Configuration| DotEnv                                        |
-Static serve | Serve static module                         |
+Static serve | Serve static module                           | 
 Authentication| Passport                                     |
 Validation | Class-Validator                                 |                                                                
 Data sanitizing | Sanitize interceptor                       | 
