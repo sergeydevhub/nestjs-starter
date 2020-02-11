@@ -1,7 +1,7 @@
 {
-  "name": "starter",
+  "name": "nestjs-starter",
   "version": "0.0.1",
-  "description": "Some description",
+  "description": "NestJS example project",
   "author": "",
   "license": "MIT",
   "scripts": {
