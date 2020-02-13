@@ -40,22 +40,3 @@ App health check| Terminus                                   |
 Formatting | Class-Transformer                               |
 Included Middlewares | csurf, helmet, cookie-parser, express-rate-limit |
 Cache | Redis |
-
-## Installation
-
-```bash
-$ npm install
-```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
