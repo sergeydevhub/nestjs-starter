@@ -1,7 +1,7 @@
 import { Logger, Injectable } from '@nestjs/common';
 import * as crypto from 'crypto';
-import { defer, from, Observable, of, pipe } from 'rxjs';
-import { mergeMap, map, switchMap, subscribeOn, every, find, filter } from 'rxjs/operators';
+import { from, Observable } from 'rxjs';
+import { every} from 'rxjs/operators';
 import { subscribeTo } from 'rxjs/internal-compatibility';
 
 export interface ICryptoService {
@@ -62,7 +62,7 @@ export class CryptoService implements ICryptoService {
 
   verify(password: string, salt: string): Observable<boolean> {
     return from(
-      this.hashPassword.apply(arguments),
+      this.hashPassword.apply(this, arguments)
     ).pipe(
       every(hash => hash === password )
     )
