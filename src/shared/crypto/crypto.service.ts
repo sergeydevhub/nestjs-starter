@@ -2,7 +2,6 @@ import { Logger, Injectable } from '@nestjs/common';
 import * as crypto from 'crypto';
 import { from, Observable } from 'rxjs';
 import { every} from 'rxjs/operators';
-import { subscribeTo } from 'rxjs/internal-compatibility';
 
 export interface ICryptoService {
   generateSalt(len: number): Promise<Error | string | null>
